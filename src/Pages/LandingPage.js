@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-import Buntton from "elements/Button";
+import Header from "Parts/Header";
 
 export default class LandingPage extends Component {
   render() {
-    return <div></div>;
+    return (
+      <>
+        <Header {...this.props}></Header>
+      </>
+    );
   }
 }
