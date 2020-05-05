@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "elements/Button";
+import formatNumber from "utils/FormatNumber";
 
 import ImgHero from "assets/images/img-hero.jpg";
 import ImgFrame from "assets/images/img-frame.jpg";
@@ -15,10 +16,6 @@ export default function Hero(props) {
     });
   }
 
-  function numberFormat(number) {
-    const formatNumbering = new Intl.NumberFormat("id-ID");
-    return formatNumbering.format(number);
-  }
   return (
     <section className="container pt-4">
       <div className="row align-items-center">
@@ -51,7 +48,7 @@ export default function Hero(props) {
                 alt={props.data.travelers}
               />
               <h6 className="mt-3">
-                {numberFormat(props.data.travelers)}{" "}
+                {formatNumber(props.data.travelers)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   travelers
                 </span>
@@ -65,7 +62,7 @@ export default function Hero(props) {
                 alt={props.data.treasures}
               />
               <h6 className="mt-3">
-                {numberFormat(props.data.treasures)}{" "}
+                {formatNumber(props.data.treasures)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   treasures
                 </span>
@@ -79,7 +76,7 @@ export default function Hero(props) {
                 alt={props.data.cities}
               />
               <h6 className="mt-3">
-                {numberFormat(props.data.cities)}{" "}
+                {formatNumber(props.data.cities)}{" "}
                 <span className="text-gray-500 font-weight-light">cities</span>
               </h6>
             </div>
