@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "Parts/Header";
 import Hero from "Parts/Hero";
+import MostPicked from "Parts/MostPicked";
 
 import landingPage from "json/landingPage.json";
 
@@ -10,6 +11,7 @@ export default class LandingPage extends Component {
       <>
         <Header {...this.props}></Header>
         <Hero data={landingPage.hero}></Hero>
+        <MostPicked data={landingPage.mostPicked} />
       </>
     );
   }
