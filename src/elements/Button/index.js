@@ -46,24 +46,23 @@ export default function Button(props) {
           {props.children}
         </a>
       );
+    } else {
+      return (
+        <Link
+          to={props.href}
+          className={className.join(" ")}
+          style={props.style}
+          onClick={onClick}
+        >
+          {props.children}
+        </Link>
+      );
     }
-  } else {
-    return (
-      <Link
-        to={props.href}
-        className={className.join(" ")}
-        style={props.style}
-        onClick={onClick}
-      >
-        {props.children}
-      </Link>
-    );
   }
 
   // Apabila tidak diberi type button akan merender yang button dibawah
   return (
     <button
-      to={props.href}
       className={className.join(" ")}
       style={props.style}
       onClick={onClick}
