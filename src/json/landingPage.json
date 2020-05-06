@@ -4,12 +4,11 @@
     "treasures": 882,
     "cities": 1492
   },
-  "mostPicked": [
-    {
+  "mostPicked": [{
       "_id": "asd1293uasdads1",
       "name": "Jung Hook Sie",
       "type": "Apartment",
-      "imageUrl": "/images/image-mostpicked-1.jpg",
+      "imageUrl": "/images/img-mostpicked-1.jpg",
       "country": "South Korea",
       "city": "Seoul Flore",
       "price": "80",
@@ -19,7 +18,7 @@
       "_id": "asd1293uasdads1",
       "name": "The People House",
       "type": "Hotel",
-      "imageUrl": "/images/image-mostpicked-2.jpg",
+      "imageUrl": "/images/img-mostpicked-2.jpg",
       "country": "Indonesia",
       "city": "Bogor",
       "price": "52",
@@ -29,7 +28,7 @@
       "_id": "asd1293uasdads1",
       "name": "House Tour",
       "type": "Rumah",
-      "imageUrl": "/images/image-mostpicked-3.jpg",
+      "imageUrl": "/images/img-mostpicked-3.jpg",
       "country": "South Korea",
       "city": "Seoul Flore",
       "price": "80",
@@ -39,7 +38,7 @@
       "_id": "asd1293uasdads1",
       "name": "Jung Hook Sie",
       "type": "Apartment",
-      "imageUrl": "/images/image-mostpicked-4.jpg",
+      "imageUrl": "/images/img-mostpicked-4.jpg",
       "country": "South Korea",
       "city": "Seoul Flore",
       "price": "80",
@@ -49,19 +48,17 @@
       "_id": "asd1293uasdads1",
       "name": "Jung Hook Sie",
       "type": "Apartment",
-      "imageUrl": "/images/image-mostpicked-5.jpg",
+      "imageUrl": "/images/img-mostpicked-5.jpg",
       "country": "South Korea",
       "city": "Seoul Flore",
       "price": "80",
       "unit": "night"
     }
   ],
-  "categories": [
-    {
+  "categories": [{
       "_id": "asd1293uasdads1",
       "name": "House with beauty backyard",
-      "items": [
-        {
+      "items": [{
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-1.jpg",
@@ -98,8 +95,7 @@
     {
       "_id": "asd1293uasdads1",
       "name": "Hotels with large living room",
-      "items": [
-        {
+      "items": [{
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-5.jpg",
@@ -136,8 +132,7 @@
     {
       "_id": "asd1293uasdads1",
       "name": "Apartments with kitchen set",
-      "items": [
-        {
+      "items": [{
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-9.jpg",
