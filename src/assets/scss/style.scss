@@ -111,6 +111,7 @@ section {
 
 .card {
   height: 100%;
+  border: none;
 
   .tag {
     position: absolute;
@@ -155,6 +156,7 @@ section {
     height: 100%;
     cursor: pointer;
     border-radius: 15px;
+    border: none;
 
     &:after {
       position: absolute;
