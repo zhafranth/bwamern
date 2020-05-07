@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -112,6 +113,7 @@ section {
 .card {
   height: 100%;
   border: none;
+  cursor: pointer;
 
   .tag {
     position: absolute;
