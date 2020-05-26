@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ItemDetails from "json/itemDetails.json";
+import { connect } from "react-redux";
+import { checkoutBooking } from "store/action/checkout";
 
 import Header from "Parts/Header";
 import PageDetailTitle from "Parts/PageDetailsTitle";
@@ -10,7 +12,7 @@ import Categories from "Parts/Categories";
 import Testimoni from "Parts/Testimoni";
 import Footer from "Parts/Footer";
 
-export default class DetailsPage extends Component {
+class DetailsPage extends Component {
   componentDidMount() {
     window.title = "Details Page";
     window.scrollTo(0, 0);
@@ -34,7 +36,10 @@ export default class DetailsPage extends Component {
               <PageDetailDescription data={ItemDetails} />
             </div>
             <div className="col-5">
-              <BookingForm itemDetails={ItemDetails} />
+              <BookingForm
+                itemDetails={ItemDetails}
+                startBooking={this.props.checkoutBooking}
+              />
             </div>
           </div>
         </section>
@@ -45,3 +50,5 @@ export default class DetailsPage extends Component {
     );
   }
 }
+
+export default connect(null, { checkoutBooking })(DetailsPage);

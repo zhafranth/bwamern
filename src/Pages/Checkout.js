@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import Header from "Parts/Header";
 import Fade from "react-reveal/Fade";
@@ -15,7 +16,7 @@ import Payment from "Parts/Checkout/Payment";
 
 import ItemDetails from "json/itemDetails.json";
 
-export default class Checkout extends Component {
+class Checkout extends Component {
   state = {
     data: {
       firstName: "",
@@ -43,10 +44,11 @@ export default class Checkout extends Component {
 
   render() {
     const { data } = this.state;
+    const { checkout } = this.props;
 
-    const checkout = {
-      duration: 3,
-    };
+    if (!checkout) {
+      return <p>Tidak ada</p>;
+    }
 
     const steps = {
       bookingInformation: {
@@ -146,3 +148,9 @@ export default class Checkout extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  checkout: state.checkout,
+});
+
+export default connect(mapStateToProps)(Checkout);
