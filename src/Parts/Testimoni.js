@@ -13,7 +13,7 @@ export default function Testimoni({ data }) {
             style={{ margin: `30px 0  0 30px` }}
           >
             <img
-              src={data.imageUrl}
+              src={`https://admin-bwamern.herokuapp.com/${data.imageUrl}`}
               alt="Testimonial"
               style={{ zIndex: 2 }}
               className="position-absolute"
